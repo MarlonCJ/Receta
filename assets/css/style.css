@@ -24,6 +24,10 @@ body{
     font-style: normal;
     font-size: 16px;
     background-color: var(--Eggshell);
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 1600px;
 }
 
 .color-primary{
@@ -33,7 +37,7 @@ body{
 
 h1{
     color: var(--Dark-Charcoal);
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 600;
 }
 
@@ -64,23 +68,19 @@ li::marker{
 }
 
 
-.main{
+.contenedor{
     background-color: var(--White);
-    padding: 40px;
-    margin: 0 auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    border-radius: 20px;
+    width: 100%;
 }
 
-.header{}
 
 .header__img{
     width: 100%;
-    border-radius: 20px;
 }
 
-.section{}
+.main{
+    padding: 0px 30px;
+}
 
 .preparation{
     background-color: var(--Rose-White);
@@ -110,7 +110,7 @@ li::marker{
     flex-direction: row;
     width: 100%;
     margin: 10px 0;
-    padding-left: 60px;
+    padding-left: 40px;
 }
 
 .col{
@@ -125,13 +125,24 @@ li::marker{
     border-bottom: 1px solid var(--Light-Grey);
 }
 
-@media screen and (max-width:375px){
-    
-}
 
-@media screen and (max-width:1440px){
-    .main{
+@media screen and (min-width: 375px){
+   
+    h1{
+        font-size: 36px;
+    }
+
+    .contenedor{
         width: 60%;
+        margin: 40px auto;
+        border-radius: 20px;
+        padding: 30px;
+    }
+
+    .header__img{
+        border-radius: 20px;
     }
 }
+
+
 
